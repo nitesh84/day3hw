@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        function App() {
+            return React.createElement(
+                React.Fragment,
+                {},
+                React.createElement('h1', {}, 'Welcome to Web Development Essentials'),
+                React.createElement(
+                    'section',
+                    { id: 'getting-started' },
+                    React.createElement('h2', {}, 'Getting Started'),
+                    React.createElement(
+                        'p',
+                        {},
+                        'Learn how to begin your journey in web development by exploring foundational concepts.'
+                    ),
+                    React.createElement('a', { href: '#getting-started' }, 'Explore Getting Started')
+                ),
+                React.createElement(
+                    'section',
+                    { id: 'html-structuring' },
+                    React.createElement('h2', {}, 'HTML - Structuring the Web'),
+                    React.createElement(
+                        'p',
+                        {},
+                        'Understand how HTML forms the backbone of web pages by defining their structure and content.'
+                    ),
+                    React.createElement('a', { href: '#html-structuring' }, 'Learn about HTML')
+                ),
+                React.createElement(
+                    'section',
+                    { id: 'css-styling' },
+                    React.createElement('h2', {}, 'CSS - Styling the Web'),
+                    React.createElement(
+                        'p',
+                        {},
+                        'Discover how CSS enhances the visual presentation of web pages, bringing designs to life.'
+                    ),
+                    React.createElement('a', { href: '#css-styling' }, 'Explore CSS')
+                )
+            );
+        }
+
+        ReactDOM.render(React.createElement(App), document.getElementById('root'));
+    </script>
+</body>
+</html>
